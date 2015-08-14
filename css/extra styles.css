@@ -1,0 +1,294 @@
+.ionic .clear-bg {
+    background: transparent;
+}
+.ionic .list.condensed-space > .card, .ionic .list.condensed-space > .item {
+    margin: 0px 0px 2px;
+}
+.ionic .no-padding, .ionic .list.no-padding, .ionic .bar.no-padding, .ionic .button-bar.no-padding, .ionic .card.no-padding, .ionic .button.no-padding, .ionic .item.no-padding {
+    padding: 0;
+}
+
+
+/* Animate Blinds */
+
+.ionic .animate-blinds > * {
+    visibility: hidden;
+}
+.ionic .animate-blinds > * {
+    -moz-transform: scale3d(0.8, 0, 1);
+    -ms-transform: scale3d(0.8, 0, 1);
+    -webkit-transform: scale3d(0.8, 0, 1);
+    transform: scale3d(0.8, 0, 1);
+    -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: -o-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.ionic .animate-blinds .item-bg-image > img.background {
+    box-shadow: none;
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+.ionic .animate-blinds > .in, .ionic .animate-blinds.done {
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+.ionic .animate-blinds > .in, .ionic .animate-blinds.done {
+    visibility: visible;
+}
+.ionic .animate-blinds > .out {
+    -moz-transform: scale3d(0, 0, 1);
+    -ms-transform: scale3d(0, 0, 1);
+    -webkit-transform: scale3d(0, 0, 1);
+    transform: scale3d(0, 0, 1);
+}
+.ionic .list .item.item-bg-image {
+    min-height: 150px;
+}
+.ionic .animate-blinds > * {
+    visibility: hidden;
+}
+.ionic .animate-blinds > * {
+    -moz-transform: scale3d(0.8, 0, 1);
+    -ms-transform: scale3d(0.8, 0, 1);
+    -webkit-transform: scale3d(0.8, 0, 1);
+    transform: scale3d(0.8, 0, 1);
+    -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: -o-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+/* Uncomment if you want images to fade in after the card
+
+  .ionic .animate-blinds > .in .item-bg-image > img:last-child { 
+    opacity: 0;
+  }
+
+.ionic .animate-blinds.done .item-bg-image > img:last-child {
+  opacity: 1;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+
+  .ionic .animate-blinds .item-bg-image > img:last-child {
+    box-shadow: none;
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  .ionic .animate-blinds > .in .item-bg-image > img:last-child { 
+    opacity: 0;
+  }
+
+.ionic .animate-blinds.done .item-bg-image > img:last-child {
+  opacity: 1;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.ionic .animate-blinds > .in {
+    opacity: 0.6;
+}
+*/
+
+.ionic .animate-blinds > .in, .ionic .animate-blinds.done {
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ionic .animate-blinds > .in, .ionic .animate-blinds.done {
+    visibility: visible;
+}
+.ionic .animate-blinds.done > .in {
+    opacity: 1;
+}
+.ionic .animate-blinds .has-mask-reverse:after {
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ionic .animate-blinds.done .has-mask-reverse:after {
+    opacity: 1;
+}
+.ionic .animate-blinds > .out {
+    -moz-transform: scale3d(0, 0, 1);
+    -ms-transform: scale3d(0, 0, 1);
+    -webkit-transform: scale3d(0, 0, 1);
+    transform: scale3d(0, 0, 1);
+}
+/* Animated Slide / Fade In */
+
+
+.ionic .list .item.item-bg-image {
+    min-height: 150px;
+}
+.ionic .animate-blinds .item-bg-image > img.background {
+    box-shadow: none;
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+.ionic .list .item.item-bg-image {
+    max-height: 150px;
+}
+.ionic .list .item.item-bg-image > img {
+    height: 100%;
+    left: 0;
+    max-width: initial;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.ionic .list a.item {
+    opacity: 1;
+}
+.ionic .list .item.item-bg-image h1, .ionic .list .item.item-bg-image h2, .ionic .list .item.item-bg-image h3, .ionic .list .item.item-bg-image h4, .ionic .list .item.item-bg-image h5, .ionic .list .item.item-bg-image h6 {
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.95);
+    z-index: 1;
+}
+.ionic .list .item.item-bg-image h2 {
+    font-size: 24px;
+}
+.ionic .list .item.item-bg-image h2 {
+    font-size: 24px;
+}
+.ionic .list .item.item-bg-image p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    position: relative;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.95);
+    z-index: 1;
+}
+
+
+.ionic .animate-fade-slide-in .item-bg-image > img.background {
+    box-shadow: none;
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+.ionic .list .item.item-bg-image {
+    max-height: 150px;
+}
+
+
+.waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -ms-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+.waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+.waves-effect.waves-red .waves-ripple {
+    background-color: rgba(244, 67, 54, 0.7);
+}
+.waves-effect.waves-yellow .waves-ripple {
+    background-color: rgba(255, 235, 59, 0.7);
+}
+.waves-effect.waves-orange .waves-ripple {
+    background-color: rgba(255, 152, 0, 0.7);
+}
+.waves-effect.waves-purple .waves-ripple {
+    background-color: rgba(156, 39, 176, 0.7);
+}
+.waves-effect.waves-green .waves-ripple {
+    background-color: rgba(76, 175, 80, 0.7);
+}
+.waves-effect.waves-teal .waves-ripple {
+    background-color: rgba(0, 150, 136, 0.7);
+}
+
+
+.waves-effect.waves-light .waves-ripple {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.waves-input-wrapper .waves-button-input {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ionic .waves-button, .ionic .waves-button:hover, .ionic .waves-button:visited, .ionic .waves-button-input {
+    font-size: inherit;
+}
+
+.ionic .animate-blinds .has-mask-reverse:after {
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ionic .animate-blinds.done .has-mask-reverse:after {
+    opacity: 1;
+}
+
+.ionic .animate-fade-slide-in .has-mask-reverse:after {
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ionic .animate-fade-slide-in.done .has-mask-reverse:after {
+    opacity: 1;
+}
+
+.ionic .hero.has-mask-reverse:after, .ionic .item.has-mask-reverse:after, .ionic .card.has-mask-reverse:after {
+    content: '';
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}

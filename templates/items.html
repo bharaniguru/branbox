@@ -1,0 +1,52 @@
+<ion-view view-title="Menu Categories">
+    <ion-content>
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input id="searchKey" type="search" placeholder="Search" ng-model="menu" >
+        </label>
+
+        
+            <div class="list" >
+              <div class="item " ng-init="price = item.price">
+              <!-- <a class="item item-trns" href="#/item/={{item.menuId}}={{item.subMenuId}}={{item.id}}"> -->
+                <h2><span>ITEM: Muttton Biryani</span> <span class="pull-right">Price:<span id="price"  ng-model="price"> 100 </span> AED</span> <input type="hidden" ></h2> 
+                Quantity: <br><br>
+                <div class="button-bar">
+                  <button class="button"><img src="img/minus.png" style="width:20PX"  >
+                    </button>
+                  <input type="button" value="1"  class="button quantity1">
+                  <button class="button" id="plus" value="1"> 
+                    <img src="img/plus.png" style="width:20PX"> 
+                  </button>
+                  <button class="button text-center icon-left ion-ios-cart"  > 
+                  </button>
+                  <a class="button text-center ion-information button-assertive" href="#/"  ></a>
+                </div>
+            </div>
+            </div>
+         
+         <div class="list">
+            <a class="item item-thumbnail-left" href="#">
+              <img src="img/br2.jpg">
+              <h2>ITEM: Muttton Biryani</h2>
+              <p><span>Price: </span>100</p>
+               <div class="button-bar">
+                  <button class="button"><img src="img/minus.png" style="width:20px"  >
+                    </button>
+                  <input type="button" value="1"  class="button quantity1">
+                  <button class="button" id="plus" value="1"> 
+                    <img src="img/plus.png" style="width:20px"> 
+                  </button>
+                  <button class="button text-center icon-left ion-ios-cart"> 
+                  </button>
+
+                  <a class="button text-center ion-information button-assertive" href="#/"  ><i class="ion ion-information "></i></a>
+                  
+                </div>
+            </a>
+        </div>
+
+
+
+    </ion-content>
+</ion-view>
