@@ -120,7 +120,7 @@ angular.module('starter.controllers', [])
     */
 })
 
-.controller('ExtensionsCtrl', function($scope, $stateParams, $ionicActionSheet, $timeout, $ionicLoading, $ionicModal, $ionicPopup,  ionicMaterialInk) {
+.controller('contactUsCtrl', function($scope, $stateParams, $ionicActionSheet, $timeout, $ionicLoading, $ionicModal, $ionicPopup,  ionicMaterialInk) {
 
     // Triggered on a button click, or some other target
     $scope.actionSheet = function() {
