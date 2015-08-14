@@ -99,11 +99,11 @@ angular.module('starter', ['ionic', 'ionic-material', 'starter.controllers'])
         }
     })
     //Author Ezhilarasan T
-    .state('app.contactUs', {
-        url: '/contactUs',
+    .state('app.contactus', {
+        url: '/contactus',
         views: {
             'menuContent': {
-                templateUrl: 'templates/contactUs.html',
+                templateUrl: 'templates/contactus.html',
                 controller: 'contactUsCtrl'
             }
         }
