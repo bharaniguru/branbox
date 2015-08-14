@@ -98,6 +98,44 @@ angular.module('starter', ['ionic', 'ionic-material', 'starter.controllers'])
             }
         }
     })
+    //Author Ezhilarasan T
+    .state('app.contactUs', {
+        url: '/contactUs',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/contactUs.html',
+                controller: 'contactUsCtrl'
+            }
+        }
+    })
+
+    .state('app.aboutus', {
+        url: '/aboutus',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/Aboutus.html',
+                //controller: 'contactUsCtrl'
+            }
+        }
+    })
+    .state('app.gallery', {
+        url: '/gallery',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/gallery.html',
+                //controller: 'contactUsCtrl'
+            }
+        }
+    })
+    .state('app.login', {
+        url: '/login',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/login.html',
+                //controller: 'contactUsCtrl'
+            }
+        }
+    })
     ;
 
     // if none of the above states are matched, use this as the fallback
