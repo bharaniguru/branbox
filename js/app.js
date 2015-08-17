@@ -50,12 +50,12 @@ angular.module('starter', ['ionic', 'ionic-material', 'starter.controllers'])
         }
     })
 
-    .state('app.motion', {
-        url: '/motion',
+    .state('app.location', {
+        url: '/location',
         views: {
             'menuContent': {
-                templateUrl: 'templates/motion.html',
-                controller: 'MotionCtrl'
+                templateUrl: 'templates/location.html',
+                controller: 'location'
             }
         }
     })

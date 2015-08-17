@@ -120,7 +120,7 @@ angular.module('starter.controllers', [])
     */
 })
 
-.controller('contactUsCtrl', function($scope, $stateParams, $ionicActionSheet, $timeout, $ionicLoading, $ionicModal, $ionicPopup,  ionicMaterialInk) {
+.controller('ExtensionsCtrl', function($scope, $stateParams, $ionicActionSheet, $timeout, $ionicLoading, $ionicModal, $ionicPopup,  ionicMaterialInk) {
 
     // Triggered on a button click, or some other target
     $scope.actionSheet = function() {
@@ -297,4 +297,75 @@ angular.module('starter.controllers', [])
 
     $scope.blinds();
     ionicMaterialInk.displayEffect();
+})
+.controller('contactUsCtrl', function($scope, $ionicLoading, $compile) {
+    
+        var myLatlng = new google.maps.LatLng(37.3000, -120.4833);
+        var mapOptions = {
+            center: myLatlng,
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        navigator.geolocation.getCurrentPosition(function(pos) {
+            map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+            var myLocation = new google.maps.Marker({
+                position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
+                map: map,
+                title: "My Location"
+            });
+        });
+        $scope.map = map;
+})
+.controller('location', function($scope, $ionicLoading, $compile, $http) {
+    //getdata
+  // $http.post('php/branbox.php',{'branboxVariable':'location'}).success(function(data){
+  //   $scope.dbData = data;
+  //   $scope.initialize(data);
+  // }).error(function(){
+  //     $scope.data = "error DataBase";
+  // });
+  //initialize map
+  // $scope.initialize = function(data) {
+  //   var infowindow = new google.maps.InfoWindow()
+  //   var mapOptions = {
+  //       center: new google.maps.LatLng(data[0]['latitude'], data[0]['longitude']),
+  //       zoom: 3,
+  //       mapTypeId: google.maps.MapTypeId.ROADMAP
+  //   };
+  //   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  //   for (var i = 0; i < data.length; i++) {
+  //     var image = 'img/logo.jpg';
+  //     var marker = new google.maps.Marker({
+  //       map: map,
+  //       icon: image,
+  //       position: new google.maps.LatLng (data[i]['latitude'], data[i]['longitude'])
+  //     });
+  //     var content = "Business Location :" + data[i]['location'];     
+  //     google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+  //       return function() {
+  //          infowindow.setContent(content);
+  //          infowindow.open(map,marker);
+  //       };
+  //     })(marker,content,infowindow)); 
+  //   } 
+  //   $scope.map = map;
+  // }
+  var myLatlng = new google.maps.LatLng(37.3000, -120.4833);
+        var mapOptions = {
+            center: myLatlng,
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("location"), mapOptions);
+        navigator.geolocation.getCurrentPosition(function(pos) {
+            map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+            var myLocation = new google.maps.Marker({
+                position: new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude),
+                map: map,
+                title: "My Location"
+            });
+        });
+        $scope.map = map;
+
 });
