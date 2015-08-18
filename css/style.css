@@ -7,8 +7,54 @@
     height: 100px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
-    border-radius: 55px; 
+    border-radius: 55px;
+    margin-left: 34%;
+    margin-right: 34%;
+    border: 1px solid #EF473A;   
 }
+#circle1 {
+    /*background-color: red;*/
+    /*background-image: url(img/logdo.jpg);*/
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 55px;
+    margin-left: 34%;
+    margin-right: 34%;
+    border: 1px solid #EF473A; 
+    margin-top: 20px;  
+}
+#logoDiv{    
+    text-align: center;
+    width: 100%;
+}
+#colorButton{
+    /*background-color: #E0E0E0;*/
+    /*color:#3F51B5; */
+    
+    /*border-color: #EF473A;*/
+    background: -webkit-linear-gradient(left, #E6E6E6,#FFFFFF ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #E6E6E6 ,#FFFFFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #E6E6E6 ,#FFFFFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #E6E6E6 ,#FFFFFF); /* Standard syntax */
+    /*background: linear-gradient(to right, #FFCDD2 , #BBDEFB); /* Standard syntax */
+}
+#colorButton1{
+    /*background-color: #E0E0E0;*/
+    /*color:#3F51B5; */
+    
+    /*border-color: #EF473A;*/
+    background: -webkit-linear-gradient(left, #E6E6E6, #FFCDD2 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #E6E6E6, #FFCDD2 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #E6E6E6, #FFCDD2 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #E6E6E6, #FFCDD2 ); /* Standard syntax */
+    /*background: linear-gradient(to right, #FFCDD2 , #BBDEFB); /* Standard syntax */
+}
+#signIn{
+    margin-top: 40px;
+}
+
 /*ezhil*/
 
 .link {

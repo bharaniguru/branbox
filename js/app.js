@@ -29,6 +29,15 @@ angular.module('starter', ['ionic', 'ionic-material', 'starter.controllers'])
         templateUrl: 'templates/menu.html',
         controller: 'AppCtrl'
     })
+    .state('app.registerNew', {
+        url: '/registerNew',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/registerNew.html',
+                controller: 'ListsCtrl'
+            }
+        }
+    })
 
     .state('app.lists', {
         url: '/lists',

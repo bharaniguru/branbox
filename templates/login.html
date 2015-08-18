@@ -1,20 +1,27 @@
 <ion-view view-title="Login">
     <ion-content class="im-wrapper" style="background-color:#E0E0E0">
-      <div>
+      <div id="logoDiv">
         <img id="circle" src="img/logo.jpg">        
       </div>
-      <div class="list">    
-      <label class="item item-input item-floating-label">
-        <span class="input-label">Email</span>
-        <input type="text" placeholder="Email">
+      <div class="list"> 
+ 
+      <label  class="item item-input item-floating-label">
+        <span  class="input-label">Email</span>
+        <input id="colorButton" type="text" placeholder="Email">
       </label>
-      <label class="item item-input item-floating-label">
-        <span class="input-label">password</span>
-        <input type="password" placeholder="password">
+
+      <label class="item item-input item-floating-label" >
+        <span   class="input-label">Password</span>        
+        <input id="colorButton" type="password" placeholder="Password" highlight-color="energized">
+        <div class="highlight highlight-energized"></div>
       </label>
-      <button class="button button-full button-balanced">
+      <button id="signIn" class="button button-full e button-balanced">
         Sign in
       </button>
+      <div id="signIn" class="button-bar">
+        <a  class="button button-small button-outline button-positive" href="#/app/registerNew">Register</a>
+        <a  class="button button-small button-outline button-positive" href="#/app/appOverview">Overview</a>  
+      </div>      
     </div>
   </icon-content>
 </incon-view>
