@@ -108,10 +108,11 @@ p {
 /* Menu */
 
 .menu .bar.bar-header.expanded {
-    background-image: url('../img/bg.png');
+    background-image: url('../img/menubg.jpg');
     background-size: 120%;
     background-position: 0%;
     transition: all .5s ease-in-out;
+
 }
 
 .menu.menu-left * {
@@ -300,11 +301,17 @@ p {
         height: 530px;
         width: auto;
     }
+    .rowpadding {
+        padding: 0px 35px 5px 0px;
+    }
 }
 @media only screen and (max-width : 979px) {
     #location{
         height: 530px;
         width: auto;
+    }
+    .rowpadding {
+        padding: 0px 25px 5px 0px;
     }
 }
 @media only screen and (max-width : 767px) {
@@ -312,11 +319,17 @@ p {
         height: 450px;
         width: auto;
     }
+    .rowpadding {
+        padding: 0px 15px 5px 0px;
+    }
 }
 @media only screen and (max-width : 480px) {
-        #location{
+    #location{
         height: 400px;
         width: auto;
+    }
+    .rowpadding {
+        padding: 0px;
     }
 }
 @media only screen and (max-width : 320px) {
@@ -324,4 +337,17 @@ p {
         height: 400px;
         width: auto;
     }
+    .rowpadding {
+        padding: 0px;
+    }
+    
 }
+.menuhover a:hover{
+    background: #EF473A; 
+    color: white;
+}
+.responsiveShadow {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+            padding: 5px 5px 0px 5px;
+            width: auto;
+    }
