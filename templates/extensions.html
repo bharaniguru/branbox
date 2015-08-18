@@ -1,39 +1,60 @@
-<ion-view view-title="Ionic Extensions">
-    <ion-content class="im-wrapper">
-        Ionic extensions get materialized, with no additional code needed. View <a href="http://ionicframework.com/docs/api/" class="link" target="_blank">Ionic's Extensions API</a> for implementation details.<br /><br />
-        <button class="button button-full" ng-click="loading()">Loading</button>
-        <div class="code-wrapper">
-            <a class="toggle">Material Loading Template</a>
-            <div class="code">$ionicLoading.show({
-            		template: <strong class="balanced-900 bold balanced-100-bg">'&lt;div class="loader"&gt;&lt;svg class="circular"&gt;&lt;circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/&gt;&lt;/svg&gt;&lt;/div&gt;'</strong>
-        		});
-        	</div>
+<ion-view view-title="About Us">
+    <ion-content>
+        <div class="list card stable-bg" style="transition-delay: 0.13s; border:solid 1px red;">
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse">
+                <h2>Grilled Eggplant Rolls</h2>
+                <p>Buy 2 Get 1 Free</p>
+                <img class="full-image" src="img/eggplant-roll.jpg" style="transition-delay: 0.02s;">
+            </a>
         </div>
-        <button class="button button-full" ng-click="showPopup()">Pop-Up</button>
-        <div class="code-wrapper">
-            <a class="toggle">To Add Ink</a>
-            <div class="code">var alertPopup = $ionicPopup.alert({
-            title: 'You are now my subscribed to Cat Facts',
-            template: 'You will meow receive fun daily facts about CATS!'
-        });
-        <strong class="balanced-900 bold balanced-100-bg">// to activate ink on modal
-        $timeout(function() {
-            ionicMaterialInk.displayEffect();
-        }, 0);</strong>
-        	</div>
+        <div class="card" style="transition-delay: 0.13s;">
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse">
+                <h2>DESSERT</h2>
+                <p>Buy 2 Get 1 Free</p>
+                <img class="full-image" src="img/dessert-1.jpg" style="transition-delay: 0.02s;">
+            </a>
         </div>
-        <button class="button button-full" ng-click="actionSheet()">Action Sheet</button>
-        <button class="button button-full" ng-click="openModal()">Modal</button>
-        <button class="button button-full" ng-click="popover()">Popover</button>
-        <script id="my-modal.html" type="text/ng-template">
-            <ion-modal-view>
-                <ion-header-bar>
-                    <h1 class="title">My Modal Title</h1>
-                </ion-header-bar>
-                <ion-content class="padding">
-                    My Modal Contents
-                </ion-content>
-            </ion-modal-view>
-        </script>
+        <div class="card in" style="transition-delay: 0.13s;">
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse">
+                <h2>CHOCO DESSERT</h2>
+                <p>Buy 3 Get 1 Free</p>
+                <img class="full-image" src="img/chocolate-delite.jpg" style="transition-delay: 0.02s;">
+            </a>
+        </div>
+        <div class="card in" style="transition-delay: 0.13s;">
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse">
+                <h2>MUTTON BIRYANI</h2>
+                <p>Buy 2 Get 1 Free</p>
+                <img class="full-image" src="img/mutton.jpg" style="transition-delay: 0.02s;">
+            </a>
+        </div>
+        <div class="card in" style="transition-delay: 0.13s; background-color: grey;">
+            <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse">
+                <h2>CHICKEN BIRYANI</h2>
+                <p>Buy 2 Get 1 Free</p>
+                <img class="full-image" src="img/aboutfood.jpg" style="transition-delay: 0.02s;">
+            </a>
+        </div>
     </ion-content>
 </ion-view>
+
+<!-- <div class="gridComponent" style="height:333px;">
+<img class="" style="left:0px;top:0px;width:250px;height:333px;z-index:1;position:absolute;" alt="Chef presents Swedish meatball meal from IKEA Restaurant" src="/ms/en_US/IKEA_Food/images/fy16_10pc_meatball_plate.jpg" usemap="#20141_fovd05a_02">
+<div class="headZeroGray" style="text-align:left;left:18px;top:23px;width:;height:;z-index:2;position:absolute;">Swedish Meatballs</div>
+<div class="headThreeGray" style="text-align:left;left:34px;top:250px;width:;height:;z-index:3;position:absolute;">4</div>
+<div class="headTwoGray" style="text-align:left;left:60px;top:255px;width:;height:;z-index:4;position:absolute;">99</div>
+<div class="headTwoGray" style="text-align:left;left:18px;top:255px;width:;height:;z-index:5;position:absolute;">$</div>
+<div class="bodyTextGray" style="text-align:left;left:18px;top:42px;width:;height:;z-index:6;position:absolute;">
+10 meatballs served with
+<br>
+mashed potatoes, cream sauce
+<br>
+and lingonberries.
+</div>
+<div class="clearAll"></div>
+</div>
+<div class="clearAll"></div>
+</div>
+<div id="20141_fovd05a_03" class="gridColumn sixColumn lastColumn">
+<div class="clearAll"></div>
+</div> -->
