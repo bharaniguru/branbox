@@ -62,17 +62,11 @@
             <label class="item item-input item-stacked-label">
                 <span class="input-label">Confirm Password</span>
                 <input id="colorButton1" type="password" placeholder="Password">
-            </label>                            
-            <label class="toggle toggle-balanced">
-                <input type="checkbox">
-                <div class="track">
-                    <div class="handle"></div>
-                </div>
-                Terms and Condition
-            </label>
-            <button id="signIn" class="button button-full e button-balanced">
-            SUBMIT
-            </button>
-        </div>             
+            </label>  
+            <ion-checkbox ng-model="isChecked">Terms and Condition</ion-checkbox>               
+            <button class="button button-full button-balanced">
+                SUBMIT
+            </button>              
+        </div>                  
     </ion-content>
 </ion-view>

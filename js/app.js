@@ -38,6 +38,15 @@ angular.module('starter', ['ionic', 'ionic-material', 'starter.controllers'])
             }
         }
     })
+    .state('app.myAccount', {
+        url: '/myAccount',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/myAccount.html',
+                controller: 'ListsCtrl'
+            }
+        }
+    })
 
     .state('app.lists', {
         url: '/lists',
