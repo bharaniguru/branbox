@@ -31,3 +31,22 @@
         directToDemo();
     }
 })();
+
+
+    
+var directives = angular.module('directives', []);
+directives.directive('gallerycontainer', function() {
+    
+console.log('teat');
+    return {
+        restrict: "A",
+        link: function(scope, elem, attrs) {
+            $(elem).sGallery({
+                fullScreenEnabled: true
+            });
+
+        }
+    }
+
+
+});
