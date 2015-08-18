@@ -122,7 +122,7 @@ angular.module('starter', ['ionic', 'ionic-material', 'starter.controllers'])
         views: {
             'menuContent': {
                 templateUrl: 'templates/contactus.html',
-                controller: 'contactUsCtrl'
+                //controller: 'contactUsCtrl'
             }
         }
     })
